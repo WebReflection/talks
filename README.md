@@ -3,6 +3,7 @@ about my talks
 
 Here a quick summary of talks over these years. Slides will be inside relative folders.
 
+  * [FED London](http://www.eventbrite.co.uk/e/fed-london-sponsored-by-yahoo-registration-14767545125) at Yahoo HQ in London
   * [WebPerfDays](http://www.webperfdays.org) at Google HQ as O'Reilly Velocity side event
   * [DHTMLConf](http://dhtmlconf.com) ... no, that's not a joke!
   * [QCon London 2012](http://qconlondon.com/london-2012/speaker/Andrea+Giammarchi)
