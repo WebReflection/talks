@@ -3,6 +3,7 @@ about my talks
 
 Here a quick summary of talks over these years. Slides will be inside relative folders.
 
+  * [WEB COMPONENTS REMOTE CONF](https://wcremoteconf.com/)
   * [infoShare2015](https://infoshare.pl/#p72)
   * [Frontend.fi](http://frontend.fi/march-meetup-2015/) at Andorra, Helsinki. [Video here](https://www.youtube.com/watch?v=mT2wwXEVu94)
   * [FED London](http://www.eventbrite.co.uk/e/fed-london-sponsored-by-yahoo-registration-14767545125) at Yahoo HQ in London. [video here](https://www.youtube.com/watch?v=6tgbrN0vyec)
