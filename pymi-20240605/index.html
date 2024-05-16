@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PyScript: Python on the browser and beyond</title>
+    <meta name="description" content="PyScript: Python on the browser and beyond">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,700,700i%7CMaitree:200,300,400,600,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/webslides.css">
+    <link rel="stylesheet" type='text/css' media='all' href="static/css/svg-icons.css">
+    <link rel="shortcut icon" sizes="16x16" href="static/images/favicons/favicon.png">
+    <link rel="shortcut icon" sizes="32x32" href="static/images/favicons/favicon-32.png">
+    <link rel="apple-touch-icon icon" sizes="76x76" href="static/images/favicons/favicon-76.png">
+    <link rel="apple-touch-icon icon" sizes="120x120" href="static/images/favicons/favicon-120.png">
+    <link rel="apple-touch-icon icon" sizes="152x152" href="static/images/favicons/favicon-152.png">
+    <link rel="apple-touch-icon icon" sizes="180x180" href="static/images/favicons/favicon-180.png">
+    <link rel="apple-touch-icon icon" sizes="192x192" href="static/images/favicons/favicon-192.png">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#333333">
+  </head>
+  <body>
+    <main role="main">
+      <article id="webslides" class="vertical">
+        <section>
+          <div class="wrap aligncenter">
+            <h1><strong>PyScript</strong> Python on the browser and beyond</h1>
+            <p class="text-intro">
+              A journey into PyScript features and challenges behind it.
+            </p>
+          </div>
+        </section>
+        <section>
+          <div class="wrap size-50 aligncenter">
+            <h2><strong>Why PyScript?</strong></h2>
+            <div class="bg-white shadow">
+              <ul class="flexblock reasons">
+                <li>
+                  <h2>Python is almost everywhere.</h2>
+                  <p>We would like to fix that “<em>almost</em>” bit by bringing it literally everywhere!</p>
+                </li>
+                <li>
+                  <h2>Python is users friendly &amp; easy to learn.</h2>
+                  <p>Kids, students, hobbyists, as well as professionals and/or AI, <em>Python</em> can reach, and be used by, everyone.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <div class="grid vertical-align">
+              <div class="column">
+                <h3><strong>PyScript is <a target="_blank" href="example/">really easy</a></strong></h3>
+                <p class="text-intro">Each <code>&lt;script type="m/py"&gt;</code> in the page is a portal for a seamless Python/Web integration.</p>
+                <p>Any <em>JS</em> related API can be consumed by <em>Python</em> code and vice-versa: modules, packages, libraries ... these all work out of the box!</p>
+              </div>
+              <div class="column">
+                <pre>&lt;script type="mpy"&gt;
+<span class="code-comment"># MicroPython</span>
+from pyscript import window, document
+
+document.body.textContent = f"""
+  You are in {window.location.href} !
+"""
+&lt;/script&gt;
+</pre>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h2>Features</h2>
+            <ul class="flexblock features">
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-users">
+                      <use xlink:href="#fa-users"></use>
+                    </svg>
+                    Simple by design
+                  </h2>
+                  we focus on DX &amp; community
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-clock-o">
+                      <use xlink:href="#fa-clock-o"></use>
+                    </svg>
+                    Non blocking
+                  </h2>
+                  with optional <code>worker</code> logic
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-thumbs-up">
+                      <use xlink:href="#fa-thumbs-up"></use>
+                    </svg>
+                    Pythonic
+                  </h2>
+                  via <code>pyscript</code> module <a target="_blank" href="https://docs.pyscript.net/latest/user-guide/builtins/">utils</a>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-check-square-o">
+                      <use xlink:href="#fa-check-square-o"></use>
+                    </svg>
+                    Configurable
+                  </h2>
+                  Use a <em>config</em> to bring in more
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-mobile">
+                      <use xlink:href="#fa-mobile"></use>
+                    </svg>
+                    Mobile Friendly
+                  </h2>
+                  works <a target="_blank" href="https://webreflection.github.io/coincident/test/pyterminal/">on Mobile too</a> <code style="font-size:xx-small">t.ly/8tr0o</code>
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-bolt">
+                      <use xlink:href="#fa-bolt"></use>
+                    </svg>
+                    Lightweight
+                  </h2>
+                  Minimal <em>core</em> with lazy plugins
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-laptop">
+                      <use xlink:href="#fa-laptop"></use>
+                    </svg>
+                    Terminal
+                  </h2>
+                  a native-like <em>REPL</em> experience
+                </div>
+              </li>
+              <li>
+                <div>
+                  <h2>
+                    <svg class="fa-file-text">
+                      <use xlink:href="#fa-file-text"></use>
+                    </svg>
+                    Editor
+                  </h2>
+                  write live and <em>Run</em> code
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section>
+          <div class="wrap">
+            <h2><strong>PyScript Demos</strong></h2>
+            <ul class="flexblock gallery">
+              <li>
+                <a href="https://pyscript.github.io/polyscript/examples/repl/micropython/" title="Main REPL">
+                  <figure>
+                    <img alt="Main REPL" src="static/images/terminal.png">
+                    <figcaption>
+                      <h2>Main REPL</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="https://webreflection.github.io/coincident/test/pyterminal/" title="Worker REPL">
+                  <figure>
+                    <img alt="Worker REPL" src="static/images/terminal.png">
+                    <figcaption>
+                      <h2>Worker REPL</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="https://webreflection.github.io/micro-repl/mpy/" title="IoT REPL">
+                  <figure>
+                    <img alt="IoT REPL" src="static/images/terminal.png">
+                    <figcaption>
+                      <h2>IoT REPL</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+              <li>
+                <a href="https://pysheets.app/go" title="LTK via PySheets">
+                  <figure>
+                    <img alt="LTK via PySheets" src="static/images/pysheets.png">
+                    <figcaption>
+                      <h2>LTK @ PySheets</h2>
+                    </figcaption>
+                  </figure>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section class="aligncenter">
+          <div class="wrap">
+            <h2><strong>Ready to Start?</strong> </h2>
+            <p class="text-intro">Visit our documentation page and feel free to hack around on our online editor.</p>
+            <p>
+              <a target="_blank" href="https://docs.pyscript.net/latest/" class="button" title="PyScript Documentation">
+                <svg class="fa-file-text-o">
+                  <use xlink:href="#fa-file-text-o"></use>
+                </svg>
+                Documentation
+              </a>
+              <span class="try">
+                <a target="_blank" href="https://pyscript.com/" title="Online PyScript Editor">
+                  <svg class="fa-pencil-square-o">
+                    <use xlink:href="#fa-pencil-square-o"></use>
+                  </svg>
+                  Online PyScript Editor
+                </a>
+              </span>
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+    <script src="static/js/webslides.js"></script>
+    <script>window.ws = new WebSlides();</script>
+    <script defer src="static/js/svg-icons.js"></script>
+  </body>
+</html>

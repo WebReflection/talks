@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PyScript is really easy</title>
+  <script type="module" src="https://pyscript.net/releases/2024.5.2/core.js"></script>
+  <script type="mpy">
+    # MicroPython
+    from pyscript import window, document
+    
+    document.body.textContent = f"""
+      You are in {window.location.href} !
+    """
+    </script>
+</head>
+</html>
